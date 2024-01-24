@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form me</title>
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <!-- Include Slick CSS and JS files -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+      </head>
+<body>
+    <div class="container">
+        <div class="header">
+            code dz
+        </div>
+        <div class="image-container">
+            <div class="single-item box">
+              <img src="1.webp" alt="Image 1">
+              <img src="2.jpeg" alt="Image 2">
+            </div>
+          </div>
+          <div class="info-container">
+            <span>100 DZ</span>
+            <h1>70 DZ</h1>
+          </div>
+          <div class="des-container">
+            Introducing the epitome of audio elegance, our Beautiful AirPods redefine the concept of wireless earbuds with a perfect blend of style, functionality, and cutting-edge technology. Crafted with meticulous attention to detail, these earbuds seamlessly integrate into your lifestyle, delivering a captivating auditory experience while making a statement of sophistication.
+          </div>
+          <div class="form-container" dir="rtl">
+            <form class="form" method="post" action="process_order.php">
+                <div class="form-group">
+                    <label for="inp">الاسم الخاص بك</label>
+                    <input type="text" id="inp" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="inp1">رقم الهاتف الخاص بك</label>
+                    <input type="tel" id="inp1" name="phone" pattern="[0-9]{10}" required>
+                    <small>يرجى إدخال رقم هاتف صحيح (10 أرقام)</small>
+                </div>
+                <div class="form-group">
+                    <label for="inp2">المدينة الخاصة بك</label>
+                    <input type="text" id="inp2" name="city" required>
+                </div>
+                <button class="form-submit-btn" type="submit">إرسال</button>
+            </form>
+        </div>
+        
+          <footer>
+            All rights reserved by Code Dz © 2024
+          </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
